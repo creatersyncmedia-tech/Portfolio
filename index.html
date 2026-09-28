@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ==========================================================
+       QUICK EDIT GUIDE
+       1. Name ........ search & replace [YOUR NAME] (title, navbar, footer)
+       2. Contact ..... search for 918000961081 and creatersync.media@gmail.com
+       3. Demo links .. see the "DEMO LINKS" comment at the top of the Work section
+       4. Screenshots . put your images in an /images folder next to index.html
+       5. Colors ...... edit the CSS variables at the top of style.css
+       ========================================================== -->
+
+  <title>[YOUR NAME] — Freelance Web Developer</title>
+  <meta name="description" content="Freelance web developer designing clean, responsive websites for local businesses.">
+  <meta name="theme-color" content="#FAF8F4">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#work">Skip to content</a>
+
+  <!-- ==========================================================
+       NAVBAR
+       ========================================================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Back to top">
+        <span class="brand-name">[YOUR NAME]</span>
+        <span class="brand-role">Freelance Web Developer</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==========================================================
+         HERO
+         ========================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill anim" style="--d:.05s">Freelance Web Developer</span>
+
+          <h1 class="anim" style="--d:.15s">
+            Websites That Make Local Businesses <span class="hl">Look Professional.</span>
+          </h1>
+
+          <p class="hero-text anim" style="--d:.3s">
+            I design and develop clean, responsive websites that help local businesses present their services, build trust and create a stronger online presence.
+          </p>
+
+          <div class="hero-actions anim" style="--d:.45s">
+            <a href="#work" class="btn btn-primary">
+              View My Work
+              <svg class="icon-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+            </a>
+            <a href="#contact" class="avail">
+              <span class="dot" aria-hidden="true"></span>
+              Available for freelance projects
+            </a>
+          </div>
+        </div>
+
+        <!-- Abstract website mockup (purely decorative) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="browser">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+              <div class="browser-url">yourbusiness.com</div>
+            </div>
+            <div class="browser-body">
+              <div class="mock-nav">
+                <i class="mock-logo"></i>
+                <span class="mock-links"><b></b><b></b><b></b></span>
+                <i class="mock-btn"></i>
+              </div>
+              <div class="mock-hero">
+                <div class="mock-text">
+                  <b class="l1"></b><b class="l2"></b><b class="l3"></b><b class="l4"></b>
+                  <i class="mock-cta"></i>
+                </div>
+                <div class="mock-img"></div>
+              </div>
+              <div class="mock-cards"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+
+          <div class="phone">
+            <div class="phone-screen">
+              <i class="p-bar"></i>
+              <b class="p-l1"></b><b class="p-l2"></b>
+              <i class="p-img"></i>
+              <i class="p-btn"></i>
+              <b></b><b></b>
+            </div>
+          </div>
+
+          <div class="chip chip-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+            Responsive layout
+          </div>
+          <div class="chip chip-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+            Clean, tidy code
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         WORK / PORTFOLIO
+         ========================================================== -->
+    <section class="section work" id="work">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <span class="eyebrow">Portfolio</span>
+          <h2>Selected Work</h2>
+          <p>Concept websites created to demonstrate different business styles, layouts and frontend capabilities.</p>
+
+          <div class="work-notes">
+            <p class="notice">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+              <span>All projects shown here are concept/demo websites created for portfolio purposes. They are not official websites of the businesses shown.</span>
+            </p>
+            <p class="star-note">★ levels represent website scope and frontend complexity, not customer ratings.</p>
+          </div>
+        </div>
+
+        <!-- ======================================================
+             DEMO LINKS  —  REPLACE THE URLs BELOW
+             ------------------------------------------------------
+             Concept Classes  : https://creatersyncmedia-tech.github.io/demo-coaching-classes-web/
+             SmileCare        : https://creatersyncmedia-tech.github.io/demo-clinic-web/
+             The Craft Barber : https://creatersyncmedia-tech.github.io/demo-barber-shop/
+
+             Each URL lives in the href="" of that project's
+             "View Demo" button (look for the "REPLACE DEMO URL" comment).
+
+             TO ADD A PROJECT:    copy one whole <article> ... </article> block.
+             TO REMOVE A PROJECT: delete its whole <article> block.
+             (Keep class "project-card--featured" only on the one you want
+             shown full-width.)
+             ====================================================== -->
+        <div class="projects" data-stagger>
+
+          <!-- ===== PROJECT 1 — Concept Classes (3★) ===== -->
+          <article class="project-card reveal">
+            <div class="shot">
+              <span class="badge"><span class="star">3★</span> Website</span>
+              <span class="shot-tag">Concept demo</span>
+              <div class="shot-window">
+                <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="shot-frame" data-placeholder="Add screenshot → images/concept-classes.jpg">
+                  <!-- Replace with a screenshot/preview of the Concept Classes demo website -->
+                  <img src="images/concept-classes.jpg" alt="Preview of the Concept Classes coaching institute demo website" width="1200" height="750" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <div>
+                  <p class="project-category">Coaching Institute Website</p>
+                  <h3 class="project-title">Concept Classes</h3>
+                </div>
+                <p class="project-price">₹15,999</p>
+              </div>
+              <p class="project-desc">A clean one-page coaching institute website focused on presenting courses, course duration, institute information, gallery, testimonials and location in a clear and professional way.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <!-- REPLACE DEMO URL (Concept Classes) in the href below -->
+              <a class="btn btn-dark btn-sm" href="https://creatersyncmedia-tech.github.io/demo-coaching-classes-web/" target="_blank" rel="noopener noreferrer">
+                View Demo
+                <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- ===== PROJECT 2 — SmileCare Dental Clinic (3★) ===== -->
+          <article class="project-card reveal">
+            <div class="shot">
+              <span class="badge"><span class="star">3★</span> Website</span>
+              <span class="shot-tag">Concept demo</span>
+              <div class="shot-window">
+                <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="shot-frame" data-placeholder="Add screenshot → images/smilecare.jpg">
+                  <!-- Replace with a screenshot/preview of the SmileCare demo website -->
+                  <img src="images/smilecare.jpg" alt="Preview of the SmileCare Dental Clinic demo website" width="1200" height="750" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <div>
+                  <p class="project-category">Local Clinic Website</p>
+                  <h3 class="project-title">SmileCare Dental Clinic</h3>
+                </div>
+                <p class="project-price">₹15,999</p>
+              </div>
+              <p class="project-desc">A clean local clinic website focused on presenting services, clinic information, patient-friendly content, location, Google Maps and enquiry/contact functionality.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <!-- REPLACE DEMO URL (SmileCare) in the href below -->
+              <a class="btn btn-dark btn-sm" href="https://creatersyncmedia-tech.github.io/demo-clinic-web/" target="_blank" rel="noopener noreferrer">
+                View Demo
+                <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- ===== PROJECT 3 — The Craft Barber (4★, featured) ===== -->
+          <article class="project-card project-card--featured reveal">
+            <div class="shot">
+              <span class="badge badge--4"><span class="star">4★</span> Website</span>
+              <span class="shot-tag">Concept demo</span>
+              <div class="shot-window">
+                <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="shot-frame" data-placeholder="Add screenshot → images/craft-barber.jpg">
+                  <!-- Replace with a screenshot/preview of The Craft Barber demo website -->
+                  <img src="images/craft-barber.jpg" alt="Preview of The Craft Barber barbershop demo website" width="1200" height="750" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <div>
+                  <p class="project-category">Barbershop Website</p>
+                  <h3 class="project-title">The Craft Barber</h3>
+                </div>
+                <p class="project-price">₹22,999</p>
+              </div>
+              <p class="project-desc">A more polished local-business website with stronger visual presentation, gallery, services, reviews, booking/enquiry interaction and enhanced frontend experience.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <!-- REPLACE DEMO URL (The Craft Barber) in the href below -->
+              <a class="btn btn-primary btn-sm" href="https://creatersyncmedia-tech.github.io/demo-barber-shop/" target="_blank" rel="noopener noreferrer">
+                View Demo
+                <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         SERVICES
+         ========================================================== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Services</span>
+          <h2>What I Build</h2>
+        </div>
+
+        <div class="services-grid" data-stagger>
+
+          <div class="service reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9M4 9v11h16V9M9 20v-6h6v6M3 9h18"/></svg>
+            </div>
+            <h3>Business Websites</h3>
+            <p>Professional websites designed around the needs of local businesses.</p>
+          </div>
+
+          <div class="service reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="14" height="11" rx="2"/><path d="M7 19h5M9.5 15v4"/><rect x="15.5" y="9" width="6" height="11" rx="1.5"/></svg>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Layouts that work smoothly across desktop, tablet and mobile.</p>
+          </div>
+
+          <div class="service reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg>
+            </div>
+            <h3>Modern Frontend</h3>
+            <p>Clean interfaces with thoughtful interactions, animations and visual detail.</p>
+          </div>
+
+          <div class="service reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h8M18 6h2M4 12h2M12 12h8M4 18h10M20 18h0"/><circle cx="15" cy="6" r="2.2"/><circle cx="9" cy="12" r="2.2"/><circle cx="17" cy="18" r="2.2"/></svg>
+            </div>
+            <h3>Website Improvements</h3>
+            <p>Design and frontend improvements for existing websites.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         ABOUT
+         ========================================================== -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+
+        <div class="about-left reveal">
+          <span class="eyebrow">About</span>
+          <h2>Built for Businesses That Want to Look Professional Online.</h2>
+
+          <div class="code-card" aria-hidden="true">
+            <div class="code-card-bar"><span></span><span></span><span></span></div>
+<pre><code><span class="c-tag">&lt;section</span> <span class="c-attr">class</span>=<span class="c-str">"your-business"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;h1&gt;</span><span class="c-text">Clear. Modern. Yours.</span><span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;p&gt;</span><span class="c-text">Built around what you need.</span><span class="c-tag">&lt;/p&gt;</span>
+<span class="c-tag">&lt;/section&gt;</span><span class="caret"></span></code></pre>
+          </div>
+        </div>
+
+        <div class="about-right reveal" style="--d:.12s">
+          <p>I'm a freelance web developer focused on modern frontend development. I build responsive websites with clean visual presentation, and I shape each one around what the business actually needs rather than forcing it into a one-size-fits-all template.</p>
+          <p>The projects in this portfolio are concept websites I created to show what I can do. I keep every project practical and maintainable, so your website stays easy to understand, update and grow.</p>
+
+          <ul class="points">
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Modern frontend development</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Responsive on every screen size</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Clean, focused visual presentation</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Built around real business needs</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Practical, maintainable projects</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         HOW I WORK
+         ========================================================== -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Process</span>
+          <h2>How I Work</h2>
+        </div>
+
+        <div class="steps" data-stagger>
+          <div class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Understand</h3>
+            <p>Understand the business, its audience and what the website needs to achieve.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Design &amp; Build</h3>
+            <p>Create the layout, frontend and responsive experience around the business.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Refine</h3>
+            <p>Polish the details, test responsiveness and prepare the website for launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         CONTACT
+         ========================================================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+
+          <div class="contact-copy">
+            <span class="eyebrow eyebrow--light">Contact</span>
+            <h2>Have a Website Idea?</h2>
+            <p>Have a local business and need a website that looks professional? Message me and let's talk about what your business actually needs.</p>
+          </div>
+
+          <div class="contact-options">
+
+            <!-- Primary: WhatsApp -->
+            <div class="contact-option contact-option--primary">
+              <p class="contact-label">WhatsApp <span class="contact-tag">Preferred</span></p>
+              <a class="contact-value" href="https://wa.me/918000961081" target="_blank" rel="noopener noreferrer">+91 8000961081</a>
+              <a class="btn btn-light" href="https://wa.me/918000961081" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+                Chat on WhatsApp
+              </a>
+            </div>
+
+            <!-- Secondary: Email -->
+            <div class="contact-option">
+              <p class="contact-label">Email</p>
+              <a class="contact-value contact-value--sm" href="mailto:creatersync.media@gmail.com">creatersync.media@gmail.com</a>
+              <a class="btn btn-outline-light" href="mailto:creatersync.media@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6.5L20.5 7"/></svg>
+                Send an Email
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <p class="brand-name">[YOUR NAME]</p>
+        <p class="brand-role">Freelance Web Developer</p>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-title">Get in touch</p>
+        <a href="mailto:creatersync.media@gmail.com">creatersync.media@gmail.com</a>
+        <a href="https://wa.me/918000961081" target="_blank" rel="noopener noreferrer">WhatsApp: +91 8000961081</a>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-title">Quick links</p>
+        <div class="footer-links">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 [YOUR NAME]. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
